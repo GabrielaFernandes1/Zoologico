@@ -7,6 +7,8 @@ package br.com.satc.Interfacegrafica;
 
 import br.com.Animais.Animal;
 import br.com.Animais.Grupo;
+import br.com.Animais.Lobo;
+import br.com.Animais.zoologico;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JOptionPane;
@@ -16,7 +18,7 @@ import javax.swing.JOptionPane;
  * @author SATC
  */
 public class CadastroDeAnimal extends javax.swing.JFrame {
-
+    zoologico z = new zoologico();
     /**
      * Creates new form CadastroDeAnimal
      */
@@ -426,7 +428,7 @@ public class CadastroDeAnimal extends javax.swing.JFrame {
                      JOptionPane.showMessageDialog(this, nfe);
                   }
                   grupo = new Grupo(0,this.jNomegrupo.getText(),this.jDescricaogrupo.getText());
-                  
+                  z.getAnimais().add(new Lobo(peso, tamanho, dataNascimento, WIDTH, descricao, status));
                 
               }else if (jPeixe.isSelected()){
                   
