@@ -401,11 +401,11 @@ public class CadastroDeAnimal extends javax.swing.JFrame {
     private void jSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jSalvarActionPerformed
               if (this.jLobo.isSelected()){
                   SimpleDateFormat stf = new SimpleDateFormat("dd/MM/yyyy");
-                float peso, tamanho;
-                Date dataNascimento;
+                float peso = 0, tamanho = 0;
+                Date dataNascimento = null;
                 Grupo grupo;
                 String descricao;
-                char status;
+                char status = 0;
                 
                 descricao = this.jDescricaoAnimal.getText();
                   try {
